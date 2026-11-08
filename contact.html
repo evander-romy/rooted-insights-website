@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Rooted Insights</title>
+<meta name="description" content="Get in touch with Romy Evander about your data questions.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Work+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="index.html" aria-label="Rooted Insights – home">
+<svg viewBox="0 0 200 200" aria-hidden="true">
+<circle cx="100" cy="100" r="92" fill="none" stroke="#1E3A38" stroke-width="7"></circle>
+<circle cx="100" cy="72" r="22" fill="#D08A3C"></circle>
+<path d="M14 104 C 38 92, 56 92, 76 104 S 120 116, 140 104 S 172 92, 186 104" fill="none" stroke="#2F7A72" stroke-width="9" stroke-linecap="round"></path>
+<path d="M100 110 L100 176 M100 132 C 88 140, 78 146, 66 162 M100 132 C 112 140, 122 146, 134 162 M100 150 C 94 158, 88 164, 84 178 M100 150 C 106 158, 112 164, 116 178" fill="none" stroke="#1E3A38" stroke-width="7" stroke-linecap="round"></path>
+</svg>
+<span class="brand-name">Romy Evander<span class="brand-tag">Rooted Insights</span></span>
+</a>
+<nav class="nav" aria-label="Main">
+<a href="index.html"><span class="en">Home</span><span class="nl">Home</span></a>
+<a href="about.html"><span class="en">About</span><span class="nl">Over mij</span></a>
+<a href="services.html"><span class="en">Services</span><span class="nl">Diensten</span></a>
+<a href="contact.html" aria-current="page"><span class="en">Contact</span><span class="nl">Contact</span></a>
+<button class="lang-toggle" type="button">NL</button>
+</nav>
+</div>
+</header>
+<main>
+<section class="page-hero">
+<div class="wrap contact-grid">
+<div>
+<p class="eyebrow">Contact</p>
+<h1><span class="en">Let's talk</span><span class="nl">Laten we praten</span></h1>
+<p class="lead" style="margin-top:20px"><span class="en">Tell me about your data, your process or the question that keeps coming back. I'll get back to you within two working days.</span><span class="nl">Vertel me over je data, je proces of die vraag die steeds terugkomt. Ik reageer binnen twee werkdagen.</span></p>
+<ul class="contact-list">
+<li><strong>Email</strong><a href="mailto:romy@rootedinsights.eu">romy@rootedinsights.eu</a></li>
+<li><strong>LinkedIn</strong><a href="https://www.linkedin.com/">[<span class="en">your LinkedIn profile</span><span class="nl">jouw LinkedIn-profiel</span>]</a></li>
+<li><strong><span class="en">Based in</span><span class="nl">Gevestigd in</span></strong><span class="en">Amsterdam region · working remotely across Europe</span><span class="nl">Regio Amsterdam · werkt op afstand door heel Europa</span></li>
+</ul>
+</div>
+<div class="card">
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="contact.html?sent=1">
+<input type="hidden" name="form-name" value="contact">
+<p class="hidden-field"><label>Leave this empty <input name="bot-field"></label></p>
+<div><label for="name"><span class="en">Name</span><span class="nl">Naam</span></label><input id="name" name="name" type="text" autocomplete="name" required></div>
+<div><label for="email"><span class="en">Email</span><span class="nl">E-mail</span></label><input id="email" name="email" type="email" autocomplete="email" required></div>
+<div><label for="company"><span class="en">Company (optional)</span><span class="nl">Bedrijf (optioneel)</span></label><input id="company" name="company" type="text" autocomplete="organization"></div>
+<div><label for="message"><span class="en">Your question</span><span class="nl">Je vraag</span></label><textarea id="message" name="message" required data-ph-en="What are you working on, and where could data help?" data-ph-nl="Waar werk je aan, en waar kan data helpen?"></textarea></div>
+<div><button class="btn btn-primary" type="submit"><span class="en">Send message</span><span class="nl">Verstuur bericht</span></button></div>
+</form>
+</div>
+</div>
+</section>
+
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div>
+<div class="footer-brand">Romy Evander · Rooted Insights</div>
+<p class="footer-tag"><span class="en">Rooted in data, grown into insight.</span><span class="nl">Geworteld in data, gegroeid tot inzicht.</span></p>
+</div>
+<ul class="footer-links">
+<li><a href="mailto:romy@rootedinsights.eu">romy@rootedinsights.eu</a></li>
+<li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+</ul>
+<div class="copyright">© <span id="year"></span> Romy Evander · Rooted Insights</div>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
